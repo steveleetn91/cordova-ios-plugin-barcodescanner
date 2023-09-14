@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-ios-plugin-barcodescanner"
+    version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Cordova iOS plugin</name>
+    <description>Cordova iOS Plugin</description>
+    <author>SteveLee</author>
+    <license>MIT</license>
+    <keywords>cordova, cordova plugin, cordova barcode, cordova-ios
+    </keywords>
+    <repo>https://github.com/steveleetn91/cordova-ios-plugin-barcodescanner.git</repo>
+    <issue>https://github.com/steveleetn91/cordova-ios-plugin-barcodescanner.git/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=4.0" />
+        <engine name="cordova-ios" version=">=7.0.0" />
+    </engines>
+    <js-module name="BarcodeScanneriOS" src="www/BarcodeScanneriOS.js">
+            <clobbers target="BarcodeScanneriOS" />
+            <clobbers target="plugins.BarcodeScanneriOS" />
+        </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="BarcodeScanneriOS">
+                <param name="ios-package" value="BarcodeScanneriOS" />
+            </feature>
+        </config-file>
+
+        <header-file src="native/ios/BarcodeScanneriOS.h" />
+        <source-file src="native/ios/BarcodeScanneriOS.m" />
+        <podspec>
+            <pods use-frameworks="true">
+                <pod name="GoogleMLKit/BarcodeScanning" spec="3.2.0" />
+            </pods>
+        </podspec>
+    </platform>
+    
+</plugin>

@@ -1,0 +1,25 @@
+{
+  "name": "cordova-ios-plugin-barcodescanner",
+  "version": "1.0.0",
+  "description": "Cordova iOS plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steveleetn91/cordova-ios-plugin-barcodescanner.git"
+  },
+  "keywords": [
+    "stevelee",
+    "cordova-plugin",
+    "cordova-ios",
+    "cordova-barcode"
+  ],
+  "author": "stevelee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steveleetn91/cordova-ios-plugin-barcodescanner/issues"
+  },
+  "homepage": "https://github.com/steveleetn91/cordova-ios-plugin-barcodescanner#readme"
+}
